@@ -41,10 +41,10 @@
 
   fill: var(--secondary-text-color);
   transition: fill var(--timing-function);
-}
 
-.callback-form__input:focus + .callback-form__icon {
-  fill: #2196f3;
+  .callback-form__input:focus + & {
+    fill: #2196f3;
+  }
 }
 
 .callback-form__input {
@@ -55,24 +55,24 @@
   border-radius: 4px;
 
   transition: border-color var(--timing-function);
-}
 
-.callback-form__input:focus {
-  border-color: var(--accent-color);
-  outline: transparent;
+  &:focus {
+    border-color: var(--accent-color);
+    outline: transparent;
+  }
 }
 
 .callback-form__textarea {
   resize: none;
   padding-left: 16px;
-}
 
-.callback-form__textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .policy-checkbox {
@@ -86,12 +86,22 @@
   top: 50%;
   left: 14px;
   transform: translateY(-50%);
+
   cursor: pointer;
 
   width: 16px;
   height: 15px;
 
   transition: opacity var(--timing-function);
+
+  .policy-checkbox__input:checked ~ & {
+    opacity: 0;
+  }
+
+  .policy-checkbox__input:focus-visible ~ & {
+    outline: 2px solid rgb(5, 34, 195, 0.7);
+    outline-offset: 1px;
+  }
 }
 
 .callback-form__check-icon {
@@ -107,24 +117,15 @@
 
   opacity: 0;
   transition: opacity var(--timing-function);
-}
 
-.policy-checkbox__input:checked ~ .callback-form__check-icon {
-  opacity: 1;
-}
+  .policy-checkbox__input:checked ~ & {
+    opacity: 1;
+  }
 
-.policy-checkbox__input:focus-visible ~ .callback-form__check-icon {
-  outline: 2px solid rgba(5, 34, 195, 0.7);
-  outline-offset: 1px;
-}
-
-.policy-checkbox__input:checked ~ .callback-form__uncheck-icon {
-  opacity: 0;
-}
-
-.policy-checkbox__input:focus-visible ~ .callback-form__uncheck-icon {
-  outline: 2px solid rgb(5, 34, 195, 0.7);
-  outline-offset: 1px;
+  .policy-checkbox__input:focus-visible ~ & {
+    outline: 2px solid rgba(5, 34, 195, 0.7);
+    outline-offset: 1px;
+  }
 }
 
 .policy-checkbox__label {
@@ -147,11 +148,11 @@
   text-decoration: none;
 
   transition: color var(--timing-function);
-}
 
-.policy-checkbox__link:hover,
-.policy-checkbox__link:focus {
-  color: var(--secondary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color);
+  }
 }
 
 .policy-checkbox__link:before {

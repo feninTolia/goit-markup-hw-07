@@ -16,17 +16,16 @@
 
   transition: background-color var(--timing-function),
     fill var(--timing-function);
-}
 
-.socials__link:hover,
-.socials__link:focus {
-  background-color: var(--accent-color);
-  fill: var(--main-white-color);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--main-white-color);
 
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-  fill: var(--main-white-color);
+    .socials__icon {
+      fill: var(--main-white-color);
+    }
+  }
 }
 
 .socials__icon {
@@ -35,17 +34,17 @@
   fill: var(--socials-color);
 }
 
-.socials--footer .socials__link {
+.socials__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
-.socials--footer .socials__icon {
+.socials__icon--footer {
   fill: var(--main-white-color);
-}
-
-.socials--footer .socials__link:hover,
-.socials--footer .socials__link:focus {
-  background-color: var(--accent-color);
 }

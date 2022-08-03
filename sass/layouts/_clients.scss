@@ -16,6 +16,17 @@
   border-radius: 4px;
 
   transition: border-color var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+
+    & .clients__icon {
+      border-color: var(--accent-color);
+      fill: var(--accent-color);
+    }
+  }
 }
 
 .clients__icon {
@@ -25,12 +36,4 @@
   fill: var(--socials-color);
 
   transition: fill var(--timing-function);
-}
-
-.clients__link:hover,
-.clients__link:focus,
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
 }

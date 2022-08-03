@@ -470,158 +470,77 @@ h3 {
   fill: #2196f3;
 }
 
-.hero {
-  max-width: 1920px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-color: var(--primary-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero__title {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-white-color);
-}
-
-.features {
-  padding-bottom: 47px;
-}
-
-.features__list > * {
-  width: calc((100% - 90px) / 4);
-}
-
-.features__thumb {
-  width: 100%;
-  height: 120px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 30px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-
-.item-features__title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-}
-
-.item-features__text {
-  line-height: 1.71;
-}
-
-.products {
-  padding-top: 47px;
-}
-
-.products__img {
-  display: block;
-}
-
-.products__thumb {
-  position: relative;
-}
-
-.products__description {
-  position: absolute;
-  display: inline-flex;
-  content: "";
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 70px;
-  font-size: 14px;
-  line-height: 1.14;
-  align-items: center;
+.filter__list {
+  gap: 8px;
   justify-content: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--main-white-color);
-  background: rgba(47, 48, 58, 0.8);
+  margin-bottom: 50px;
 }
 
-.team {
-  background-color: var(--secondary-background-color);
+.galery__link {
+  flex-basis: calc((100% - 60px) / 3);
+  transition: box-shadow var(--timing-function);
 }
 
-.team__item {
-  padding-bottom: 30px;
-  text-align: center;
-  background-color: var(--main-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.galery__link {
+  display: block;
+  text-decoration: none;
+}
+.galery__link:hover, .galery__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.item-team__img {
+.galery__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.galery__img {
   display: block;
 }
 
-.item-team__title {
-  padding-top: 30px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  color: var(--secondary-text-color);
-}
-
-.item-team__text {
-  font-size: 16px;
-  line-height: 1.19;
-}
-
-.clients__list {
+.galery__overlay {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
+  width: 100%;
+  height: calc(100% + 1px);
+  padding: 24px;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--timing-function);
+}
+.galery__link:hover .galery__overlay, .galery__link:focus .galery__overlay {
+  transform: translateY(0);
 }
 
-.clients__link {
-  display: inline-flex;
-  width: 170px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition: border-color var(--timing-function);
-}
-.clients__link:hover, .clients__link:focus {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-}
-.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
+.overlay-galery__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--main-white-color);
 }
 
-.clients__icon {
-  width: 106px;
-  height: 60px;
-  fill: var(--socials-color);
-  transition: fill var(--timing-function);
+.galery__desc {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.galery__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.galery__text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
 }
 
 .footer {
@@ -704,4 +623,4 @@ h3 {
 
 .subscribe-button__icon {
   margin-left: 10px;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=portfolio.css.map */
