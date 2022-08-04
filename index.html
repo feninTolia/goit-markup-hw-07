@@ -568,22 +568,23 @@
           </div>
 
           <div class="callback-form__item policy-checkbox">
-            <label class="callback-form__label policy-checkbox__label">
-              <input
-                class="policy-checkbox__input visually-hidden"
-                type="checkbox"
-                name="policy"
-                value="policy"
-                required
-              />
-              <svg class="callback-form__uncheck-icon">
-                <use href="./images/symbol-defs.svg#icon-uncheck"></use>
-              </svg>
+            <input
+              class="policy-checkbox__input visually-hidden"
+              id="policy"
+              type="checkbox"
+              name="policy"
+              value="policy"
+              required
+            />
+            <label
+              class="callback-form__label policy-checkbox__label"
+              for="policy"
+            >
               <svg class="callback-form__check-icon">
                 <use href="./images/symbol-defs.svg#icon-check"></use>
               </svg>
               Соглашаюсь с рассылкой и принимаю
-              <a class="policy-checkbox__link" href="#">Условия договора</a>
+              <a class="policy-checkbox__link" href="#"> Условия договора</a>
             </label>
           </div>
 
