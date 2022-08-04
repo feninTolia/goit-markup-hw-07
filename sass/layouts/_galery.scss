@@ -54,9 +54,7 @@
 }
 
 .overlay-galery__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  @include font(400, 18px, 28px);
   color: var(--main-white-color);
 }
 
@@ -69,13 +67,11 @@
 .galery__title {
   margin-bottom: 4px;
 
-  font-size: 18px;
-  line-height: 200%;
+  @include font(null, 18px, 36px);
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
 .galery__text {
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(null, 16px, 30px);
   color: var(--primary-text-color);
 }

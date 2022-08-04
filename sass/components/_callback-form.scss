@@ -6,9 +6,7 @@
   display: inline-block;
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 30px);
   text-align: center;
 
   color: var(--secondary-text-color);
@@ -27,9 +25,7 @@
   width: 100%;
   margin-bottom: 4px;
 
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  @include font(400, 12px, 14px);
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
@@ -67,8 +63,7 @@
   padding-left: 16px;
 
   &::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(null, 14px, 16px);
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
@@ -132,8 +127,7 @@
   margin: 0;
   padding-left: 37px;
 
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(null, 14px, 24px);
   color: var(--primary-text-color);
 }
 
@@ -143,8 +137,7 @@
 
   border-bottom: 1px solid var(--accent-color);
   color: var(--accent-color);
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(null, 14px, 24px);
   text-decoration: none;
 
   transition: color var(--timing-function);

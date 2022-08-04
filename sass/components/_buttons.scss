@@ -2,9 +2,7 @@
   display: inline-block;
 
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(700, 16px, 30px);
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
@@ -14,7 +12,7 @@
   cursor: pointer;
 }
 
-.button--primary {
+.button_primary {
   padding: 10px 32px;
 
   color: var(--main-white-color);
@@ -31,12 +29,10 @@
   }
 }
 
-.button--secondary {
+.button_secondary {
   padding: 6px 22px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font(500, 16px, 26px);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -61,7 +57,7 @@
   }
 }
 
-.close-btn--modal {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -86,7 +82,7 @@
   }
 }
 
-.button--modal {
+.modal__button {
   display: flex;
   margin-top: 30px;
   margin-right: auto;

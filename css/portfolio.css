@@ -72,8 +72,9 @@ h3 {
 
 .section-title {
   margin-bottom: 50px;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   text-align: center;
   color: var(--secondary-text-color);
 }
@@ -119,7 +120,7 @@ h3 {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--secondary-text-color);
 }
@@ -136,7 +137,7 @@ h3 {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
@@ -170,7 +171,7 @@ h3 {
 }
 .callback-form__textarea::placeholder {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -222,7 +223,7 @@ h3 {
   margin: 0;
   padding-left: 37px;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   color: var(--primary-text-color);
 }
 
@@ -232,7 +233,7 @@ h3 {
   border-bottom: 1px solid var(--accent-color);
   color: var(--accent-color);
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   text-decoration: none;
   transition: color var(--timing-function);
 }
@@ -264,7 +265,7 @@ h3 {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
@@ -274,41 +275,41 @@ h3 {
   cursor: pointer;
 }
 
-.button--primary {
+.button_primary {
   padding: 10px 32px;
   color: var(--main-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: box-shadow var(--timing-function), background-color var(--timing-function);
 }
-.button--primary:hover, .button--primary:focus {
+.button_primary:hover, .button_primary:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button--secondary {
+.button_secondary {
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   background-color: var(--secondary-background-color);
   transition: box-shadow var(--timing-function), background-color var(--timing-function), color var(--timing-function);
 }
-.button--secondary:hover, .button--secondary:focus {
+.button_secondary:hover, .button_secondary:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.button--secondary.active {
+.button_secondary.active {
   color: var(--main-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.close-btn--modal {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -324,11 +325,11 @@ h3 {
   cursor: pointer;
   transition: fill var(--timing-function);
 }
-.close-btn--modal:hover, .close-btn--modal:focus {
+.modal__close-btn:hover, .modal__close-btn:focus {
   fill: var(--accent-color);
 }
 
-.button--modal {
+.modal__button {
   display: flex;
   margin-top: 30px;
   margin-right: auto;
@@ -367,32 +368,36 @@ h3 {
   fill: var(--socials-color);
 }
 
-.socials__link--footer {
+.footer__socials {
+  margin-top: 20px;
+}
+
+.socials__link_footer {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--timing-function);
 }
-.socials__link--footer:hover, .socials__link--footer:focus {
+.socials__link_footer:hover, .socials__link_footer:focus {
   background-color: var(--accent-color);
 }
 
-.socials__icon--footer {
+.socials__icon_footer {
   fill: var(--main-white-color);
 }
 
 .logo {
   text-decoration: none;
   font-family: "Raleway", roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, noto, arial, sans-serif;
-  font-size: 26px;
   font-weight: 700;
-  line-height: 1.19;
+  font-size: 26px;
+  line-height: 1.1923076923;
   color: var(--primary-logo-color);
 }
 
-.logo--footer {
+.footer__logo {
   color: var(--main-white-color);
 }
 
-.logo-accent {
+.logo_accent {
   color: var(--accent-color);
 }
 
@@ -415,7 +420,8 @@ h3 {
   padding-bottom: 32px;
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition: color var(--timing-function);
@@ -423,11 +429,12 @@ h3 {
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
 }
-.nav__link.current {
+
+.nav__link_current {
   position: relative;
   color: var(--accent-color);
 }
-.nav__link.current::after {
+.nav__link_current::after {
   content: "";
   position: absolute;
   right: 0;
@@ -452,7 +459,8 @@ h3 {
   align-items: center;
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition: color var(--timing-function);
@@ -519,7 +527,7 @@ h3 {
 .overlay-galery__text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.56;
+  line-height: 1.5555555556;
   color: var(--main-white-color);
 }
 
@@ -532,14 +540,14 @@ h3 {
 .galery__title {
   margin-bottom: 4px;
   font-size: 18px;
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
 
 .galery__text {
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   color: var(--primary-text-color);
 }
 
@@ -569,12 +577,12 @@ h3 {
   transition: color var(--timing-function);
 }
 
-.address__link--geo {
+.address__link_geo {
   color: var(--main-white-color);
 }
 
-.address__link--cont:hover,
-.address__link--cont:focus {
+.address__link_cont:hover,
+.address__link_cont:focus {
   color: var(--accent-color);
 }
 
@@ -616,7 +624,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   font-weight: 700;
-  line-height: 1.88;
+  font-size: 16px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--main-white-color);
 }

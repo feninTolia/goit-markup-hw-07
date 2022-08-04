@@ -24,7 +24,7 @@
         <!-- logo and navigation-->
         <nav class="nav container-flex">
           <a class="logo" href="./index.html"
-            ><span class="logo-accent">Web</span>Studio</a
+            ><span class="logo_accent">Web</span>Studio</a
           >
 
           <ul class="nav__list list">
@@ -32,7 +32,9 @@
               <a class="nav__link" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link current" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link nav__link_current" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Контакты</a>
@@ -70,27 +72,27 @@
           <!-- filter buttons -->
           <ul class="filter__list list flex-cards">
             <li class="filter__item">
-              <button class="button button--secondary active" type="button">
+              <button class="button button_secondary active" type="button">
                 Все
               </button>
             </li>
             <li class="filter__item">
-              <button class="button button--secondary" type="button">
+              <button class="button button_secondary" type="button">
                 Веб-сайты
               </button>
             </li>
             <li class="filter__item">
-              <button class="button button--secondary" type="button">
+              <button class="button button_secondary" type="button">
                 Приложения
               </button>
             </li>
             <li class="filter__item">
-              <button class="button button--secondary" type="button">
+              <button class="button button_secondary" type="button">
                 Дизайн
               </button>
             </li>
             <li class="filter__item">
-              <button class="button button--secondary" type="button">
+              <button class="button button_secondary" type="button">
                 Маркетинг
               </button>
             </li>
@@ -324,8 +326,8 @@
       <div class="container container-flex container-footer">
         <!-- logo-footer -->
         <div class="address-wrapper">
-          <a class="logo logo--footer" href="/"
-            ><span class="logo-accent">Web</span>Studio</a
+          <a class="logo footer__logo" href="/"
+            ><span class="logo_accent">Web</span>Studio</a
           >
 
           <!-- contact information -->
@@ -333,7 +335,7 @@
             <ul class="address__list list">
               <li class="address__item">
                 <a
-                  class="address__link address__link--geo"
+                  class="address__link address__link_geo"
                   href="https://goo.gl/maps/iMKgxrzqZL7RTVhf6"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -343,14 +345,14 @@
               </li>
               <li class="address__item">
                 <a
-                  class="address__link address__link--cont"
+                  class="address__link address__link_cont"
                   href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="address__item">
                 <a
-                  class="address__link address__link--cont"
+                  class="address__link address__link_cont"
                   href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
@@ -362,31 +364,31 @@
         <!-- join -->
         <div class="join">
           <b class="join__title">ПРИСОЕДИНЯЙТЕСЬ</b>
-          <ul class="socials list">
+          <ul class="socials footer__socials list">
             <li class="socials__item">
-              <a class="socials__link socials__link--footer" href="#">
-                <svg class="socials__icon socials__icon--footer">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
                   <use href="./images/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--footer" href="#">
-                <svg class="socials__icon socials__icon--footer">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
                   <use href="./images/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--footer" href="#">
-                <svg class="socials__icon socials__icon--footer">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
                   <use href="./images/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--footer" href="#">
-                <svg class="socials__icon socials__icon--footer">
+              <a class="socials__link socials__link_footer" href="#">
+                <svg class="socials__icon socials__icon_footer">
                   <use href="./images/symbol-defs.svg#linkedin"></use>
                 </svg>
               </a>
@@ -406,7 +408,7 @@
             required
             placeholder="E-mail"
           />
-          <button class="button button--primary subscribe-button" type="submit">
+          <button class="button button_primary subscribe-button" type="submit">
             Подписаться
             <svg class="subscribe-button__icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#plane"></use>

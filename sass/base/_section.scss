@@ -5,8 +5,7 @@
 .section-title {
   margin-bottom: 50px;
 
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 42px);
   text-align: center;
   color: var(--secondary-text-color);
 }

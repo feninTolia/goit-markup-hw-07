@@ -25,12 +25,12 @@
   transition: color var(--timing-function);
 }
 
-.address__link--geo {
+.address__link_geo {
   color: var(--main-white-color);
 }
 
-.address__link--cont:hover,
-.address__link--cont:focus {
+.address__link_cont:hover,
+.address__link_cont:focus {
   color: var(--accent-color);
 }
 
@@ -77,8 +77,7 @@
   display: inline-flex;
   align-items: center;
 
-  font-weight: 700;
-  line-height: 1.88;
+  @include font(700, 16px, 30px);
   letter-spacing: 0.06em;
   color: var(--main-white-color);
 }
